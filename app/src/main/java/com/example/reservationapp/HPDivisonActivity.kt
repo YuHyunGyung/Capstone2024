@@ -1,5 +1,6 @@
 package com.example.reservationapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.reservationapp.databinding.ActivityHpdivisonBinding
@@ -15,10 +16,10 @@ class HPDivisonActivity : AppCompatActivity() {
 
         // 환자로 로그인할 경우, 환자 키번호 "2" 전달
         binding.PatientButton.setOnClickListener {
-            MainActivity().setActivity(this, LoginActivity())
+            //MainActivity().setActivity(this, LoginActivity())
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+            finish()
         }
-
-
-
     }
 }

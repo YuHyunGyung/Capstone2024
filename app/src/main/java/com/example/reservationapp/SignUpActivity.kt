@@ -11,7 +11,7 @@ class SignUpActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
-        
+
         // 회원가입 버튼
         val SignUpTextView: TextView = findViewById(R.id.textView6)
         SignUpTextView.setOnClickListener {
